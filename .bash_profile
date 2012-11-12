@@ -64,7 +64,3 @@ function copyid() {
 function enable_gtkosx() {
 	export PATH=/opt/gtk/bin:$HOME/.local/bin:$PATH
 }
-
-function backup_update() {
-	cp $HOME/.bash_profile "$HOME/Development/SysAdmin/bash_profile"
-}
