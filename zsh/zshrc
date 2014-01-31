@@ -11,7 +11,7 @@ ZSH_THEME="robbyrussell"
 export SSH_PUBLIC=$HOME/.ssh/id_rsa.pub
 
 export MACPORTS_PATH=/opt/local/bin:/opt/local/libexec/gnubin
-export PEBBLEDEV_PATH=$HOME/Development/Pebble/PebbleSDK-2.0-BETA2/bin
+export PEBBLEDEV_PATH=$HOME/Development/Pebble/PebbleSDK-2.0-BETA4/bin
 export USERBINS_PATH=$HOME/.local/bin:/opt/bin
 
 export PATH=$USERBINS_PATH:$MACPORTS_PATH:$PEBBLEDEV_PATH:$PATH
@@ -60,3 +60,6 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+
+# OPAM configuration
+. /Users/meander/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
