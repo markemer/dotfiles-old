@@ -23,6 +23,7 @@ fpath=(~/.dotfiles/zsh/lib $fpath)
 #autoload all of our local functions
 #autoload -- ~/.dotfiles/zsh/lib/[^_]*(:t)
 
+
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
