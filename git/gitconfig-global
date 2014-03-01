@@ -1,0 +1,34 @@
+[user]
+	name = Mark Anderson
+	email = emer@emer.net
+[core]
+	excludesfile = /Users/meander/.gitignore_global
+	editor = subl --wait
+	autocrlf = input
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[color]
+	ui = auto
+[alias]
+	pullpush = !git pull upstream master && git push origin master
+	unstage = reset HEAD --
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[diff]
+	tool = Kaleidoscope
+[difftool]
+	prompt = false
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
+[mergetool]
+	prompt = false
+	keepBackup = true
+[merge]
+	tool = Kaleidoscope
+[push]
+	default = simple

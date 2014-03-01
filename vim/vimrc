@@ -1,0 +1,23 @@
+
+" Enable syntax highlighting
+syntax enable
+
+set background=dark
+
+" No annoying sound on errors
+set noerrorbells
+set novisualbell
+set t_vb=
+set tm=500
+
+" Turn backup off
+set nobackup
+set nowb
+set noswapfile
+
+" Tab Settings 
+set expandtab
+set smarttab
+set shiftwidth=4
+set tabstop=4
+
