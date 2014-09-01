@@ -3,11 +3,11 @@
 	email = emer@emer.net
 [core]
 	excludesfile = /Users/meander/.gitignore_global
-	editor = subl --wait
+	editor = atom --wait
 	autocrlf = input
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
