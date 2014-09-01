@@ -16,9 +16,9 @@ export USERBINS_PATH=$HOME/.local/bin:/opt/bin
 
 export PATH=$USERBINS_PATH:$MACPORTS_PATH:$PEBBLEDEV_PATH:$PATH
 
-export EDITOR='subl -w'
+export EDITOR='atom --wait'
 
-fpath=(~/.dotfiles/zsh/lib $fpath) 
+fpath=(~/.dotfiles/zsh/lib $fpath)
 
 #autoload all of our local functions
 #autoload -- ~/.dotfiles/zsh/lib/[^_]*(:t)
@@ -27,7 +27,7 @@ fpath=(~/.dotfiles/zsh/lib $fpath)
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias sport='sudo port -ucpv'
+alias sport='sudo /opt/local/bin/port -ucpv'
 alias scpan='sudo cpan'
 
 alias ls='ls --color=auto --human-readable'
