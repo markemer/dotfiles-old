@@ -21,10 +21,9 @@ export PATH=$USERBINS_PATH:$MACPORTS_PATH:$PEBBLEDEV_PATH:$AWS_PATH:$GO_BINPATH:
 
 export EDITOR='atom --wait'
 
-fpath=(~/.dotfiles/zsh/lib $fpath)
-
+fpath=(~/.dotfiles/lib $fpath)
 #autoload all of our local functions
-#autoload -- ~/.dotfiles/zsh/lib/[^_]*(:t)
+autoload -- ~/.dotfiles/lib/[^_]*(:t)
 
 
 # Example aliases

@@ -1,0 +1,3 @@
+autoload colors; colors
+
+print -- $fg[blue] \⚛ $reset_color "$@"
