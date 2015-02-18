@@ -3,8 +3,6 @@ ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
 ZSH_THEME="robbyrussell"
 
 # Variables
@@ -24,7 +22,6 @@ export EDITOR='atom --wait'
 fpath=(~/.dotfiles/lib $fpath)
 #autoload all of our local functions
 autoload -- ~/.dotfiles/lib/[^_]*(:t)
-
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -67,10 +64,9 @@ source $ZSH/oh-my-zsh.sh
 # OPAM configuration
 . /Users/meander/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
-PATH="/Users/meander/.perl5/bin${PATH+:}${PATH}"; export PATH;
-PERL5LIB="/Users/meander/.perl5/lib/perl5${PERL5LIB+:}${PERL5LIB}"; export PERL5LIB;
-PERL_LOCAL_LIB_ROOT="/Users/meander/.perl5${PERL_LOCAL_LIB_ROOT+:}${PERL_LOCAL_LIB_ROOT}"; export PERL_LOCAL_LIB_ROOT;
-PERL_MB_OPT="--install_base \"/Users/meander/.perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/Users/meander/.perl5"; export PERL_MM_OPT;
+# PerlBrew configuration
+source ~/.perl5/etc/bashrc
+perlbrew use 5.20.2
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+# RVM
+source /Users/meander/.rvm/scripts/rvm
