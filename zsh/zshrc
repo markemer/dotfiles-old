@@ -11,11 +11,11 @@ export SSH_PUBLIC=$HOME/.ssh/id_rsa.pub
 export GOPATH=/opt/src/go
 export GO_BINPATH=$GOPATH/bin
 #export AWS_PATH=/opt/aws/bin
+export LOCAL_NODE_PATH=$HOME/.node/bin
 export MACPORTS_PATH=/opt/local/bin:/opt/local/libexec/gnubin
-export PEBBLEDEV_PATH=$HOME/Development/Pebble/PebbleSDK-2.0-BETA4/bin
 export USERBINS_PATH=$HOME/.local/bin:/opt/bin
 
-export PATH=$USERBINS_PATH:$MACPORTS_PATH:$PEBBLEDEV_PATH:$AWS_PATH:$GO_BINPATH:$PATH
+export PATH=$USERBINS_PATH:$MACPORTS_PATH:$AWS_PATH:$LOCAL_NODE_PATH:$GO_BINPATH:$PATH
 
 export EDITOR='atom --wait'
 
@@ -27,7 +27,6 @@ autoload -- ~/.dotfiles/lib/[^_]*(:t)
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias sport='sudo /opt/local/bin/port -ucpv'
-alias scpan='sudo cpan'
 
 alias ls='ls --color=auto --human-readable'
 alias setfile='SetFile'
