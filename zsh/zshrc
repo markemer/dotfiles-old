@@ -10,7 +10,7 @@ export SSH_PUBLIC=$HOME/.ssh/id_rsa.pub
 
 export GOPATH=/opt/src/go
 export GO_BINPATH=$GOPATH/bin
-export AWS_PATH=/opt/aws/bin
+#export AWS_PATH=/opt/aws/bin
 export MACPORTS_PATH=/opt/local/bin:/opt/local/libexec/gnubin
 export PEBBLEDEV_PATH=$HOME/Development/Pebble/PebbleSDK-2.0-BETA4/bin
 export USERBINS_PATH=$HOME/.local/bin:/opt/bin
