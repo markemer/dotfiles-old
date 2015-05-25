@@ -1,7 +1,9 @@
 "*":
   editor:
-    invisibles: {}
-  core: {}
+    invisibles:
+      {}
+  core:
+    audioBeep: false
   "exception-reporting":
     userId: "f383d6b9-4705-9554-68f7-7dc86f4a5e94"
   welcome:

@@ -53,3 +53,6 @@ perlbrew use 5.20.2
 
 # RVM
 source /Users/meander/.rvm/scripts/rvm
+
+#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
+[[ -s "/Users/meander/.gvm/bin/gvm-init.sh" ]] && source "/Users/meander/.gvm/bin/gvm-init.sh"
