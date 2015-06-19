@@ -4,7 +4,7 @@ function initializeANSI() {
   blackf="${esc}[30m";   redf="${esc}[31m";    greenf="${esc}[32m"
   yellowf="${esc}[33m"   bluef="${esc}[34m";   purplef="${esc}[35m"
   cyanf="${esc}[36m";    whitef="${esc}[37m"
-  
+
   blackb="${esc}[40m";   redb="${esc}[41m";    greenb="${esc}[42m"
   yellowb="${esc}[43m"   blueb="${esc}[44m";   purpleb="${esc}[45m"
   cyanb="${esc}[46m";    whiteb="${esc}[47m"
@@ -28,7 +28,7 @@ SETCOLOR_WARNING="echo -n ${yellowf}"
 function echo_success() {
   echo -n $1 && $MOVE_TO_COL
   echo -n "[" && $SETCOLOR_SUCCESS
-  echo -n $"  OK  " && $SETCOLOR_NORMAL
+  echo -n "  OK  " && $SETCOLOR_NORMAL
   echo -n "]"
   echo
   return 0
@@ -37,7 +37,7 @@ function echo_success() {
 function echo_failure() {
   echo -n $1 && $MOVE_TO_COL
   echo -n "[" && $SETCOLOR_FAILURE
-  echo -n $"FAILED" && $SETCOLOR_NORMAL
+  echo -n "FAILED" && $SETCOLOR_NORMAL
   echo -n "]"
   echo
   return 1
@@ -46,7 +46,7 @@ function echo_failure() {
 function echo_passed() {
   echo -n $1 && $MOVE_TO_COL
   echo -n "[" && $SETCOLOR_WARNING
-  echo -n $"PASSED" && $SETCOLOR_NORMAL
+  echo -n "PASSED" && $SETCOLOR_NORMAL
   echo -n "]"
   echo
   return 1
@@ -55,7 +55,7 @@ function echo_passed() {
 function echo_warning() {
   echo -n $1 && $MOVE_TO_COL
   echo -n "[" && $SETCOLOR_WARNING
-  echo -n $" WARN " && $SETCOLOR_NORMAL
+  echo -n " WARN " && $SETCOLOR_NORMAL
   echo -n "]"
   echo
   return 1
