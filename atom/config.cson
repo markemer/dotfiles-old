@@ -1,7 +1,6 @@
 "*":
   editor:
-    invisibles:
-      {}
+    invisibles: {}
   core:
     audioBeep: false
   "exception-reporting":
@@ -10,3 +9,7 @@
     showOnStartup: false
   metrics:
     userId: "16b046919e2d902a6b8ea5f452abdee60a7073bd"
+  "file-watcher":
+    promptWhenFileHasChangedOnDisk: false
+  nuclide:
+    remoteProjectsConfig: []
