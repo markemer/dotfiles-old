@@ -14,8 +14,9 @@ export GO_BINPATH=$GOPATH/bin
 export LOCAL_NODE_PATH=$HOME/.node/bin
 export MACPORTS_PATH=/opt/local/bin:/opt/local/libexec/gnubin
 export USERBINS_PATH=$HOME/.local/bin:/opt/bin
+export ETC_PATH=$(cat /etc/paths | xargs | tr " " :)
 
-export PATH=$USERBINS_PATH:$MACPORTS_PATH:$AWS_PATH:$LOCAL_NODE_PATH:$GO_BINPATH:$PATH
+export PATH=$USERBINS_PATH:$MACPORTS_PATH:$AWS_PATH:$LOCAL_NODE_PATH:$GO_BINPATH:$ETC_PATH
 
 export EDITOR='atom --wait'
 
@@ -33,7 +34,6 @@ alias setfile='SetFile'
 alias firefox='/Applications/Firefox.app/Contents/MacOS/firefox-bin'
 alias psx='ps -axwwr -o pid,user,%cpu,%mem,rss,state,start,command'
 alias unsafe_chrome='open /Applications/Google\ Chrome.app/ --args --allow-file-access-from-files -–disable-web-security'
-alias svn16='/usr/bin/svn'
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
