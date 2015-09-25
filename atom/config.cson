@@ -13,4 +13,6 @@
     promptWhenFileHasChangedOnDisk: false
   nuclide:
     remoteProjectsConfig: []
-  term3: {}
+  term3:
+    fontFamily: "Menlo"
+    fontSize: "14"
