@@ -60,5 +60,5 @@ export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
-#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
-[[ -s "/Users/meander/.gvm/bin/gvm-init.sh" ]] && source "/Users/meander/.gvm/bin/gvm-init.sh"
+#SDKMAN for Groovy
+export SDKMAN_DIR="/Users/meander/.sdkman" && source "/Users/meander/.sdkman/bin/sdkman-init.sh"

@@ -13,3 +13,4 @@
     promptWhenFileHasChangedOnDisk: false
   nuclide:
     remoteProjectsConfig: []
+  term3: {}
