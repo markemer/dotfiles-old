@@ -11,7 +11,7 @@ export SSH_PUBLIC=$HOME/.ssh/id_rsa.pub
 export GOPATH=/opt/src/go
 
 export LOCALPATH_FILE=$HOME/.dotfiles/etc/localpath
-export LOCAL_PATHS=$(cat $LOCALPATH_FILE | envsubst | xargs | tr " " :)
+export LOCAL_PATHS=$(cat $LOCALPATH_FILE | /opt/local/bin/envsubst | xargs | tr " " :)
 export ETC_PATH=$(cat /etc/paths | xargs | tr " " :)
 
 export PATH=$LOCAL_PATHS:$ETC_PATH
