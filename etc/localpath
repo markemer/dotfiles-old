@@ -1,0 +1,10 @@
+$GOPATH/bin
+/opt/vagrant/bin
+/opt/packer
+$HOME/.node/bin
+/opt/local/bin
+/opt/local/libexec/gnubin
+$HOME/.local/bin
+/opt/bin
+/usr/local/heroku/bin
+/opt/aws/bin

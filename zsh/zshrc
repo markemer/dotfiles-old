@@ -9,15 +9,12 @@ ZSH_THEME="robbyrussell"
 export SSH_PUBLIC=$HOME/.ssh/id_rsa.pub
 
 export GOPATH=/opt/src/go
-export GO_BINPATH=$GOPATH/bin
-#export AWS_PATH=/opt/aws/bin
-export LOCAL_NODE_PATH=$HOME/.node/bin
-export MACPORTS_PATH=/opt/local/bin:/opt/local/libexec/gnubin
-export USERBINS_PATH=$HOME/.local/bin:/opt/bin
-export HEROKU_PATH=/usr/local/heroku/bin
+
+export LOCALPATH_FILE=$HOME/.dotfiles/etc/localpath
+export LOCAL_PATHS=$(cat $LOCALPATH_FILE | envsubst | xargs | tr " " :)
 export ETC_PATH=$(cat /etc/paths | xargs | tr " " :)
 
-export PATH=$USERBINS_PATH:$MACPORTS_PATH:$AWS_PATH:$LOCAL_NODE_PATH:$HEROKU_PATH:$GO_BINPATH:$ETC_PATH
+export PATH=$LOCAL_PATHS:$ETC_PATH
 
 export EDITOR='atom --wait'
 
@@ -60,5 +57,5 @@ export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
-#SDKMAN for Groovy
-export SDKMAN_DIR="/Users/meander/.sdkman" && source "/Users/meander/.sdkman/bin/sdkman-init.sh"
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+[[ -s "/Users/meander/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/meander/.sdkman/bin/sdkman-init.sh"
