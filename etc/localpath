@@ -8,3 +8,4 @@ $HOME/.local/bin
 /opt/bin
 /usr/local/heroku/bin
 /opt/aws/bin
+$HOME/Library/Android/sdk/platform-tools
