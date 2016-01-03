@@ -42,6 +42,24 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
+# powerline-shell
+function powerline_precmd() {
+    PS1="$(~/.dotfiles/powerline-shell.py $? --shell zsh 2> /dev/null)"
+}
+
+function install_powerline_precmd() {
+  for s in "${precmd_functions[@]}"; do
+    if [ "$s" = "powerline_precmd" ]; then
+      return
+    fi
+  done
+  precmd_functions+=(powerline_precmd)
+}
+
+if [ "$TERM" != "linux" ]; then
+    install_powerline_precmd
+fi
+
 # OPAM configuration
 . /Users/meander/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
