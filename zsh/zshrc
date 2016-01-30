@@ -67,9 +67,6 @@ fi
 source ~/.perl5/etc/bashrc
 perlbrew use 5.22.0
 
-# RVM
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
 # PYENV configuration
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
