@@ -1,18 +1,18 @@
 "*":
-  editor:
-    invisibles: {}
   core:
     audioBeep: false
+  editor:
+    invisibles: {}
   "exception-reporting":
     userId: "f383d6b9-4705-9554-68f7-7dc86f4a5e94"
-  welcome:
-    showOnStartup: false
-  metrics:
-    userId: "16b046919e2d902a6b8ea5f452abdee60a7073bd"
   "file-watcher":
     promptWhenFileHasChangedOnDisk: false
+  metrics:
+    userId: "16b046919e2d902a6b8ea5f452abdee60a7073bd"
   nuclide:
     remoteProjectsConfig: []
   term3:
     fontFamily: "Menlo"
     fontSize: "14"
+  welcome:
+    showOnStartup: false
