@@ -1,12 +1,20 @@
 "*":
   core:
     audioBeep: false
+    openEmptyEditorOnStart: false
+    telemetryConsent: "limited"
   editor:
     invisibles: {}
   "exception-reporting":
     userId: "f383d6b9-4705-9554-68f7-7dc86f4a5e94"
   "file-watcher":
     promptWhenFileHasChangedOnDisk: false
+  fonts:
+    fontFamily: "Inconsolata-g"
+  "go-debug":
+    panelInitialVisible: false
+  linter:
+    errorPanelHeight: 24
   metrics:
     userId: "16b046919e2d902a6b8ea5f452abdee60a7073bd"
   nuclide:

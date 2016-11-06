@@ -25,12 +25,11 @@ autoload -- ~/.dotfiles/lib/[^_]*(:t)
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias sport='sudo /opt/local/bin/port -ucpv'
-
+alias ls='ls --literal --color=auto --human-readable'
 alias setfile='SetFile'
-alias firefox='/Applications/Firefox.app/Contents/MacOS/firefox-bin'
+
+alias sport='sudo /opt/local/bin/port -ucpv'
 alias psx='ps -axwwr -o pid,user,%cpu,%mem,rss,state,start,command'
-alias unsafe_chrome='open /Applications/Google\ Chrome.app/ --args --allow-file-access-from-files -–disable-web-security'
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -39,39 +38,12 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
-unalias ls; alias ls='ls --literal --color=auto --human-readable'
-alias setfile='SetFile'
-
-alias sport='sudo /opt/local/bin/port -ucpv'
-alias firefox='/Applications/Firefox.app/Contents/MacOS/firefox-bin'
-alias psx='ps -axwwr -o pid,user,%cpu,%mem,rss,state,start,command'
-alias unsafe_chrome='open /Applications/Google\ Chrome.app/ --args --allow-file-access-from-files -–disable-web-security'
-
-# powerline-shell
-# function powerline_precmd() {
-#     PS1="$(~/.dotfiles/powerline-shell.py $? --shell zsh 2> /dev/null)"
-# }
-
-# function install_powerline_precmd() {
-#   for s in "${precmd_functions[@]}"; do
-#     if [ "$s" = "powerline_precmd" ]; then
-#       return
-#     fi
-#   done
-#   precmd_functions+=(powerline_precmd)
-# }
-
-# if [ "$TERM" != "linux" ]; then
-#     install_powerline_precmd
-# fi
-
 # OPAM configuration
 . /Users/meander/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
 # PerlBrew configuration
 source ~/.perl5/etc/bashrc
-perlbrew use 5.22.0
+perlbrew use 5.24.0
 
 # PYENV configuration
 export PATH="$HOME/.pyenv/bin:$PATH"
@@ -90,3 +62,6 @@ source '/opt/google/cloud-sdk/path.zsh.inc'
 
 # The next line enables shell command completion for gcloud.
 source '/opt/google/cloud-sdk/completion.zsh.inc'
+
+# iTerm2 Shell Integration for ZSH
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
