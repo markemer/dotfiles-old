@@ -1,0 +1,3 @@
+#!/opt/local/bin/zsh
+
+MANWIDTH=160 MANPAGER='col -bx' man $@ | atom

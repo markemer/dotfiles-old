@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/opt/local/bin/zsh
 
 SSH_PUBLIC=$HOME/.ssh/id_rsa.pub
 ssh ${1} 'cat >> .ssh/authorized_keys' < $SSH_PUBLIC

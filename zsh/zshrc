@@ -22,15 +22,6 @@ fpath=(~/.dotfiles/lib $fpath)
 #autoload all of our local functions
 autoload -- ~/.dotfiles/lib/[^_]*(:t)
 
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias ls='ls --literal --color=auto --human-readable'
-alias setfile='SetFile'
-
-alias sport='sudo /opt/local/bin/port -ucpv'
-alias psx='ps -axwwr -o pid,user,%cpu,%mem,rss,state,start,command'
-
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
@@ -65,3 +56,6 @@ source '/opt/google/cloud-sdk/completion.zsh.inc'
 
 # iTerm2 Shell Integration for ZSH
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# aliases
+source "${HOME}/.dotfiles/zsh/zalias"

@@ -1,3 +1,5 @@
+#!/opt/local/bin/zsh
+
 autoload colors; colors
 
-print -- $fg[blue] \⚛ $reset_color "$@"
+print -- $fg[blue] Hello $reset_color "$@"
