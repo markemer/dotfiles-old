@@ -13,6 +13,8 @@
     fontFamily: "Inconsolata-g"
   "go-debug":
     panelInitialVisible: false
+  "go-plus":
+    panelDisplayMode: "closed"
   linter:
     errorPanelHeight: 24
   metrics:
