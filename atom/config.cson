@@ -4,6 +4,7 @@
     openEmptyEditorOnStart: false
     telemetryConsent: "limited"
   editor:
+    fontFamily: "SF Mono"
     invisibles: {}
   "exception-reporting":
     userId: "f383d6b9-4705-9554-68f7-7dc86f4a5e94"
