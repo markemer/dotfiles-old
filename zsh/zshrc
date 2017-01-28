@@ -8,7 +8,7 @@ ZSH_THEME="robbyrussell"
 # Variables
 export SSH_PUBLIC=$HOME/.ssh/id_rsa.pub
 
-export GOPATH=/opt/src/go
+export GOPATH=/opt/go
 
 export LOCALPATH_FILE=$HOME/.dotfiles/etc/localpath
 export LOCAL_PATHS=$(cat $LOCALPATH_FILE | /opt/local/bin/envsubst | xargs | tr " " :)
@@ -34,7 +34,7 @@ source $ZSH/oh-my-zsh.sh
 
 # PerlBrew configuration
 source ~/.perl5/etc/bashrc
-perlbrew use 5.24.0
+perlbrew use 5.24.1
 
 # PYENV configuration
 export PATH="$HOME/.pyenv/bin:$PATH"
@@ -51,8 +51,9 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 # The next line updates PATH for the Google Cloud SDK.
 source '/opt/google/cloud-sdk/path.zsh.inc'
 
-# The next line enables shell command completion for gcloud.
+# Shell command completion
 source '/opt/google/cloud-sdk/completion.zsh.inc'
+source '/opt/aws/bin/aws_zsh_completer.sh'
 
 # iTerm2 Shell Integration for ZSH
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
