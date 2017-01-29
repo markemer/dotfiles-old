@@ -34,7 +34,7 @@ source $ZSH/oh-my-zsh.sh
 
 # PerlBrew configuration
 source ~/.perl5/etc/bashrc
-perlbrew use 5.24.1
+perlbrew use 5.24.0
 
 # PYENV configuration
 export PATH="$HOME/.pyenv/bin:$PATH"

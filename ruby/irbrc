@@ -10,20 +10,21 @@ rescue LoadError => err
 end
 
 # irb history
-ARGV.concat [ "--readline", "--prompt-mode", "simple" ]
+ARGV.concat ['--readline', '--prompt-mode', 'simple']
 IRB.conf[:EVAL_HISTORY] = 1000
 IRB.conf[:SAVE_HISTORY] = 1000
-IRB.conf[:HISTORY_FILE] = File::expand_path("~/.irbhistory")
+IRB.conf[:HISTORY_FILE] = File.expand_path('~/.irbhistory')
 
+# Class to add introspection to Object
 class Object
   def interesting_methods
     case self.class
     when Class
-      self.public_methods.sort - Object.public_methods
+      public_methods.sort - Object.public_methods
     when Module
-      self.public_methods.sort - Module.public_methods
+      public_methods.sort - Module.public_methods
     else
-      self.public_methods.sort - Object.new.public_methods
+      public_methods.sort - Object.new.public_methods
     end
   end
 end
