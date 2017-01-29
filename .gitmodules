@@ -1,9 +1,6 @@
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
-[submodule "bashmarks"]
-	path = bashmarks
-	url = https://github.com/huyng/bashmarks.git
 [submodule "llvm/chisel"]
 	path = llvm/chisel
 	url = git@github.com:facebook/chisel.git
