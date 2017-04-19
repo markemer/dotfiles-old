@@ -1,7 +1,9 @@
 "*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "1f84da7a-2ff7-495a-89d6-c99fa4f9287a"
   core:
     audioBeep: false
-    openEmptyEditorOnStart: false
     telemetryConsent: "limited"
   editor:
     fontFamily: "SF Mono"
@@ -16,8 +18,7 @@
     panelInitialVisible: false
   "go-plus":
     panelDisplayMode: "closed"
-  linter:
-    errorPanelHeight: 24
+  linter: {}
   metrics:
     userId: "16b046919e2d902a6b8ea5f452abdee60a7073bd"
   nuclide:
