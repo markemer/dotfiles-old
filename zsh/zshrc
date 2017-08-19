@@ -33,8 +33,8 @@ source $ZSH/oh-my-zsh.sh
 . /Users/meander/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
 # PerlBrew configuration
-source ~/.perl5/etc/bashrc
-perlbrew use 5.24.0
+#source ~/.perl5/etc/bashrc
+#perlbrew use 5.24.0
 
 # PYENV configuration
 export PATH="$HOME/.pyenv/bin:$PATH"
@@ -56,24 +56,24 @@ source '/opt/google/cloud-sdk/completion.zsh.inc'
 source '/opt/aws/bin/aws_zsh_completer.sh'
 
 # iTerm2 Shell Integration for ZSH
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+#test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # aliases
 source "${HOME}/.dotfiles/zsh/zalias"
 
-function powerline_precmd() {
-    PS1="$(${HOME}/.dotfiles/prompt/powerline-shell.py $? --shell zsh 2> /dev/null)"
-}
-
-function install_powerline_precmd() {
-  for s in "${precmd_functions[@]}"; do
-    if [ "$s" = "powerline_precmd" ]; then
-      return
-    fi
-  done
-  precmd_functions+=(powerline_precmd)
-}
-
-if [ "$TERM" != "linux" ]; then
-    install_powerline_precmd
-fi
+# function powerline_precmd() {
+#     PS1="$(${HOME}/.dotfiles/prompt/powerline-shell.py $? --shell zsh 2> /dev/null)"
+# }
+#
+# function install_powerline_precmd() {
+#   for s in "${precmd_functions[@]}"; do
+#     if [ "$s" = "powerline_precmd" ]; then
+#       return
+#     fi
+#   done
+#   precmd_functions+=(powerline_precmd)
+# }
+#
+# if [ "$TERM" != "linux" ]; then
+#     install_powerline_precmd
+# fi

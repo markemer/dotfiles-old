@@ -6,7 +6,7 @@
     audioBeep: false
     telemetryConsent: "limited"
   editor:
-    fontFamily: "SF Mono"
+    fontFamily: "Iosevka"
     invisibles: {}
   "exception-reporting":
     userId: "f383d6b9-4705-9554-68f7-7dc86f4a5e94"
@@ -19,6 +19,8 @@
   "go-plus":
     panelDisplayMode: "closed"
   linter: {}
+  "linter-ui-default":
+    panelHeight: 69
   metrics:
     userId: "16b046919e2d902a6b8ea5f452abdee60a7073bd"
   nuclide:
