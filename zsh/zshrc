@@ -33,7 +33,7 @@ source $ZSH/oh-my-zsh.sh
 . /Users/meander/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
 # PerlBrew configuration
-#source ~/.perl5/etc/bashrc
+source ~/.perl5/etc/bashrc
 #perlbrew use 5.24.0
 
 # PYENV configuration
@@ -56,7 +56,7 @@ source '/opt/google/cloud-sdk/completion.zsh.inc'
 source '/opt/aws/bin/aws_zsh_completer.sh'
 
 # iTerm2 Shell Integration for ZSH
-#test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # aliases
 source "${HOME}/.dotfiles/zsh/zalias"

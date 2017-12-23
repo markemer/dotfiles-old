@@ -19,8 +19,7 @@
   "go-plus":
     panelDisplayMode: "closed"
   linter: {}
-  "linter-ui-default":
-    panelHeight: 69
+  "linter-ui-default": {}
   metrics:
     userId: "16b046919e2d902a6b8ea5f452abdee60a7073bd"
   nuclide:
