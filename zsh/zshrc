@@ -77,3 +77,6 @@ source "${HOME}/.dotfiles/zsh/zalias"
 # if [ "$TERM" != "linux" ]; then
 #     install_powerline_precmd
 # fi
+
+# Added by Krypton
+export GPG_TTY=$(tty)
