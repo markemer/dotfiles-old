@@ -2,8 +2,13 @@
   "atom-beautify":
     general:
       _analyticsUserId: "1f84da7a-2ff7-495a-89d6-c99fa4f9287a"
+  "atom-package-deps":
+    ignored: []
   core:
     audioBeep: false
+    disabledPackages: [
+      "language-gfm"
+    ]
     telemetryConsent: "limited"
   editor:
     fontFamily: "Iosevka"
