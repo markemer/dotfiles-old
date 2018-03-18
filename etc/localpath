@@ -10,3 +10,4 @@ $HOME/.local/bin
 /opt/aws/bin
 $HOME/Library/Android/sdk/platform-tools
 /opt/src/flutter/bin
+$HOME/.cargo/bin
