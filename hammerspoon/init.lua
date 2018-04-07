@@ -17,6 +17,10 @@ end)
 mouseCircle = nil
 mouseCircleTimer = nil
 
+hs.urlevent.bind("someAlert", function(eventName, params)
+    hs.alert.show("Received someAlert")
+end)
+
 function mouseHighlight()
     -- Delete an existing highlight if it exists
     if mouseCircle then
