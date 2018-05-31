@@ -1,7 +1,9 @@
-hs.hotkey.bind({"cmd", "alt", "ctrl"}, "R", function()
-  hs.reload()
-end)
-hs.alert.show("Config loaded")
+require("hs.ipc")
+
+hs.loadSpoon("ReloadConfiguration")
+spoon.ReloadConfiguration:start()
+
+hs.ipc.cliInstall()
 
 hs.hotkey.bind({"cmd", "alt", "ctrl"}, "W", function()
   hs.notify.new({title="Hammerspoon", informativeText="Hello World"}):send()
