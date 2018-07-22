@@ -42,5 +42,6 @@
 	program = /usr/local/bin/krgpg
 [commit]
 	gpgSign = true
+	template = /Users/meander/.dotfiles/git/git-vanilla-message
 [tag]
 	forceSignAnnotated = true

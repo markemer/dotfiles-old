@@ -1,0 +1,9 @@
+port_name: quick description
+# |<----  Using a Maximum Of 50 Characters  ---->|
+
+* point 1
+* point 2
+
+# Don't forget tickets to close
+Closes: https://trac.macports.org/ticket/#####
+# |<----   Try To Limit Each Line to a Maximum Of 72 Characters   ---->|
