@@ -5,7 +5,7 @@ $HOME/.node/bin
 $HOME/.local/bin
 /opt/bin
 /usr/local/heroku/bin
-/opt/aws/bin
 $HOME/Library/Android/sdk/platform-tools
 /opt/src/flutter/bin
 $HOME/.cargo/bin
+/Library/Ballerina/ballerina-0.980.1/bin

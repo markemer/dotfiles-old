@@ -45,3 +45,6 @@
 	template = /Users/meander/.dotfiles/git/git-vanilla-message
 [tag]
 	forceSignAnnotated = true
+[pager]
+	branch = false
+	stash = false
