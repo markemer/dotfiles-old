@@ -1,3 +1,0 @@
-#!/opt/local/bin/zsh
-
-cd `port dir ${1}`
