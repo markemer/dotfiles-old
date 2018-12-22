@@ -1,8 +1,0 @@
-#!/opt/local/bin/zsh
-
-unset CC
-unset CXX
-unset CFLAGS
-unset CPPFLAGS
-unset LDFLAGS
-unset DYLD_LIBRARY_PATH

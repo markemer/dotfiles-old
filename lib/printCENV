@@ -1,9 +1,0 @@
-#!/opt/local/bin/zsh
-
-echo "ARCH=$ARCH"
-echo "CC=$CC"
-echo "CXX=$CXX"
-echo "CFLAGS=$CFLAGS"
-echo "CPPFLAGS=$CPPFLAGS"
-echo "LDFLAGS=$LDFLAGS"
-echo "DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH"
