@@ -3,7 +3,7 @@
 	email = emer@emer.net
 [core]
 	excludesfile = /Users/meander/.gitignore_global
-	editor = atom --wait
+	editor = code --wait
 	autocrlf = input
 [color]
 	ui = auto

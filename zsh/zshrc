@@ -19,7 +19,7 @@ export ETC_PATH=$(cat /etc/paths | xargs | tr " " :)
 
 export PATH=$LOCAL_PATHS:$ETC_PATH
 
-export EDITOR='atom --wait'
+export EDITOR='code --wait'
 
 fpath=(~/.dotfiles/lib $fpath)
 #autoload all of our local functions

@@ -4,5 +4,5 @@
 [color]
 	ui = true
 [core]
-	editor = atom --wait
+	editor = code --wait
 	excludesfile = /Users/anderm7/.gitignore_global

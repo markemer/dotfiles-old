@@ -1,4 +1,5 @@
 $GOPATH/bin
+$HOME/.cargo/bin
 $HOME/.node/bin
 /opt/local/bin
 /opt/local/libexec/gnubin
@@ -7,5 +8,4 @@ $HOME/.local/bin
 /usr/local/heroku/bin
 $HOME/Library/Android/sdk/platform-tools
 /opt/src/flutter/bin
-$HOME/.cargo/bin
 /Library/Ballerina/ballerina-0.980.1/bin
