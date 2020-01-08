@@ -1,18 +1,5 @@
-;; MELPA Stuff
-(require 'package)
-(let* ((no-ssl (and (memq system-type '(windows-nt ms-dos))
-                    (not (gnutls-available-p))))
-       (url (concat (if no-ssl "http" "https") "://melpa.org/packages/")))
-  (add-to-list 'package-archives (cons "melpa" url) t))
-(when (< emacs-major-version 24)
-  ;; For important compatibility libraries like cl-lib
-  (add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/")))
-(package-initialize)
-
-;; Kill Useless UI on OSX
-(tool-bar-mode -1)
-(scroll-bar-mode -1)
-
+(setq user-full-name "Mark Anderson")
+(setq user-mail-address "emer@emer.net")
 ;; Set to my programming font
 (set-face-attribute 'default nil :font "Iosevka 14")
 (set-frame-font "Iosevka 14" nil t)
