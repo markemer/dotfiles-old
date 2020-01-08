@@ -2,7 +2,6 @@ $GOPATH/bin
 $HOME/.cargo/bin
 $HOME/.node/bin
 /opt/local/bin
-/opt/local/libexec/gnubin
 $HOME/.local/bin
 /opt/bin
 /usr/local/heroku/bin

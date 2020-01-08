@@ -19,11 +19,11 @@ export ETC_PATH=$(cat /etc/paths | xargs | tr " " :)
 
 export PATH=$LOCAL_PATHS:$ETC_PATH
 
-export EDITOR='code --wait'
+export EDITOR='bbedit --wait'
 
 fpath=(~/.dotfiles/lib $fpath)
 #autoload all of our local functions
-autoload -- ~/.dotfiles/lib/[^_]*(:t)
+#autoload -- ~/.dotfiles/lib/[^_]*(:t)
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -33,44 +33,44 @@ plugins=(git emer)
 source $ZSH/oh-my-zsh.sh
 
 # OPAM configuration
-. /Users/meander/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+#. /Users/meander/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
 # PerlBrew configuration
+export PERLBREW_ROOT=$HOME/.perl5
 source ~/.perl5/etc/bashrc
-#perlbrew use 5.24.0
+perlbrew use 5.30.0
 
 # PYENV configuration
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
 
 # swiftenv configuration
 #export SWIFTENV_ROOT="$HOME/.swiftenv"
 #export PATH="$SWIFTENV_ROOT/bin:$PATH"
 #eval "$(swiftenv init -)"
 
-# THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-[[ -s "/Users/meander/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/meander/.sdkman/bin/sdkman-init.sh"
+# SDKMan for Groovy, Java, etc
+[[ -s "/Users/mark/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/mark/.sdkman/bin/sdkman-init.sh"
 
 # RVM configuration
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 # The next line updates PATH for the Google Cloud SDK.
-source '/opt/google/cloud-sdk/path.zsh.inc'
+#source '/opt/google/cloud-sdk/path.zsh.inc'
 
 # Shell command completion
-source '/opt/google/cloud-sdk/completion.zsh.inc'
+#source '/opt/google/cloud-sdk/completion.zsh.inc'
 #source '/Users/meander/.pyenv/shims/aws_zsh_completer.sh'
 
 # iTerm2 Shell Integration for ZSH
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+#test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # aliases
 source "${HOME}/.dotfiles/zsh/zalias"
 
 # Added by Krypton
-export GPG_TTY=$(tty)
+#export GPG_TTY=$(tty)
 
 # function powerline_precmd() {
 #     PS1="$(powerline-shell --shell zsh $?)"
@@ -88,3 +88,4 @@ export GPG_TTY=$(tty)
 # if [ "$TERM" != "linux" ]; then
 #     install_powerline_precmd
 # fi
+[ -f "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env" ] && source "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env"

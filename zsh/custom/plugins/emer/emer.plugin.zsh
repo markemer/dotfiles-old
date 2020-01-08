@@ -50,7 +50,7 @@ func xman() {
     text)
         MANWIDTH=160 
         MANPAGER='col -bx' 
-        man $2 | code -
+        man $2 | bbedit -
         ;;
     *)
         echo "Usage: $0 {print|unset}"
