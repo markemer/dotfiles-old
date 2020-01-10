@@ -5,5 +5,5 @@
 	path = llvm/chisel
 	url = https://github.com/facebook/chisel.git
 [submodule ".emacs.d"]
-	path = .emacs.d
+	path = emacs/.emacs.d
 	url = git@github.com:markemer/.emacs.d.git

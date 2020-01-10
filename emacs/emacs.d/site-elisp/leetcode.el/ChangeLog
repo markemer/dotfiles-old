@@ -1,0 +1,33 @@
+2020-01-01  Wang Kai  <kaiwkx@gmail.com>
+
+	* leetcode.el: leetcode.com don't allow third party login, so we retrieve LeetCode session from Chrome cookies
+
+2019-10-11  Wang Kai  <kaiwkx@gmail.com>
+
+	* leetcode.el (leetcode-try): When encounter syntax error, .expected_code_answer is null. Handle this situation depend on status_code.
+
+2019-10-10  Wang Kai  <kaiwkx@gmail.com>
+
+	* leetcode.el: submissions detail API modification
+
+2019-10-09  Wang Kai  <kaiwkx@gmail.com>
+
+	* leetcode.el (leetcode--fetch-problem): filter problems by regex or tag
+
+2019-09-06  Wang Kai  <kaiwkx@gmail.com>
+
+	* leetcode.el: use emacs-aio and remove request.el and
+	deferred.el, now you don't need cURL installed.
+	* README.md: update README
+
+2019-08-27  Wang Kai  <kaiwkx@gmail.com>
+
+	* leetcode.el (leetcode--problem-link): add problem button in
+	description buffer
+
+2019-07-07  Wang Kai  <kaiwkx@gmail.com>
+
+	* leetcode.el: use seq.el instead of dash, because it's in emacs
+	lisp standard lib, we don't need depending on third party lib.
+
+	Also, use auth-source.el to manage account and password.
