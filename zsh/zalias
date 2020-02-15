@@ -5,4 +5,5 @@ alias ls='gls --literal --color=auto --human-readable'
 alias setfile='SetFile'
 alias sport='sudo /opt/local/bin/port -ucpv'
 alias psx='ps -axwwr -o pid,user,%cpu,%mem,rss,state,start,command'
-alias chrome="'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'"
+alias chrome='/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
+alias emacs='/Applications/MacPorts/Emacs.app/Contents/MacOS/Emacs'

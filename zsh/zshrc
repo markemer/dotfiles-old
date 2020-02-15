@@ -90,7 +90,5 @@ if [ "$TERM" != "linux" ]; then
     install_powerline_precmd
 fi
 
-
-
 # aliases
 source "${HOME}/.dotfiles/zsh/zalias"

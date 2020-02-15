@@ -6,7 +6,6 @@
 (setq ns-command-modifier 'super)
 (setq ns-funtion-modifer 'hyper)
 
-
 ;; Name and Email
 (setq user-full-name "Mark Anderson")
 (setq user-mail-address "emer@emer.net")
@@ -21,7 +20,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (git))))
+ '(inhibit-startup-screen t)
+ '(package-selected-packages (quote (lua-mode git))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
