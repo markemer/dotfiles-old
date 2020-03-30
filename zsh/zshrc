@@ -63,11 +63,13 @@ export N_PREFIX="$HOME/.n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_P
 [ -f "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env" ] && source "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env"
 
 # The next line updates PATH for the Google Cloud SDK.
-#source '/opt/google/cloud-sdk/path.zsh.inc'
+if [ -f '/opt/gcloud/path.zsh.inc' ]; then . '/opt/gcloud/path.zsh.inc'; fi
 
-# Shell command completion
-#source '/opt/google/cloud-sdk/completion.zsh.inc'
-#source '/Users/meander/.pyenv/shims/aws_zsh_completer.sh'
+# The next line enables shell command completion for gcloud.
+if [ -f '/opt/gcloud/completion.zsh.inc' ]; then . '/opt/gcloud/completion.zsh.inc'; fi
+
+# aws-cli completions
+# source "${HOME}/.pyenv/shims/aws_zsh_completer.sh"
 
 # iTerm2 Shell Integration for ZSH
 #test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
