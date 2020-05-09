@@ -94,3 +94,7 @@ fi
 
 # aliases
 source "${HOME}/.dotfiles/zsh/zalias"
+
+# nostromo [section begin]
+eval "$(nostromo completion)"
+# nostromo [section end]

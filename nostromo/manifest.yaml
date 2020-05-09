@@ -1,0 +1,6 @@
+version: dev
+config:
+  verbose: false
+  aliasesonly: false
+  mode: 0
+commands: {}
