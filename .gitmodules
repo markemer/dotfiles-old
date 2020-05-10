@@ -4,6 +4,3 @@
 [submodule "llvm/chisel"]
 	path = llvm/chisel
 	url = https://github.com/facebook/chisel.git
-[submodule "emacs.d"]
-	path = emacs.d
-	url = https://github.com/hlissner/doom-emacs
